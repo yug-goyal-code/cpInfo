@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="../bootstrapp/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "../cssFiles/style.css">
+    <title>Error Page</title>
+</head>
+<body>
+  <div class="navBarDiv">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="../index.html">Cp info</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item px-1">
+              <a class="nav-link" href= "../index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href = "userSearch.html">Codeforces Profile<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href = "contestPage.html" id = "contestPage">Contests</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href = "codechefProfile.html">Codechef Profile</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+    <div class="container errorPage">
+        <div class = "row mb-3">
+            <h1>Ohh something went wrong :(</h1>
+        </div>
+        
+        <div class = "row d-flex justify-content-center mb-4">
+            <div class = "col-sm-12">
+                <img src = "../images/errorImage.jpg" class = "image-fluid mx-auto d-block" id = "errorImageS">
+            </div>
+        </div>
+        <h3>One of the following reasons are possible</h3>
+        <ol>
+            <li>User is not connected to the internet</li>
+            <li>The user searched does not exist</li>
+            <li>The respective api can be down</li>
+        </ol>
+    </div>
+    <script src = "../bootstrapp/js/jquery-3.5.1.js"></script>
+    <script src = "../bootstrapp/js/bootstrap.min.js"></script>
+</body>
+</html>

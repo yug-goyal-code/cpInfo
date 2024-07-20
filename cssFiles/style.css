@@ -1,0 +1,38 @@
+#heading{
+    background-color:#2a9d8f ;
+    border-bottom: 2px solid black;
+    font-size: 1.3rem;
+}
+div {
+    font-size: 1.3rem;
+}
+.hiddenElementContent, .hiddenElementButton{
+    display: none;
+}
+.additionalElement {
+    display: none;
+}
+
+.navBarDiv {
+    margin-bottom: 55px;
+}
+#primaryData, #contestSpecificInfo{
+    display: none;
+}
+
+.codechefContestInfoDetail{
+    border : 1px solid black;   
+}
+.codechefContestInfoDetail:hover{
+    background-color: #00b4d8;
+}
+
+#errorImageS{
+    width: 50%;
+}
+.errorPage{
+    font-size: 1rem;
+}
+ol{
+    font-size: 1.5rem;
+}

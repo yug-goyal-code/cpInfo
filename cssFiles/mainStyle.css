@@ -1,0 +1,29 @@
+.mainContent{
+    border: 1px solid #d2d2da; 
+    background-color: #90e0ef;
+    /* border-radius: 4%; */
+}
+
+.imagesMain{
+    width: 100%;
+    border-radius: 5%;
+}
+.mainContent p{
+    font-size: 1.2em;
+}
+.header{
+    color: floralwhite;
+    background-color: #03045e;
+}
+
+.mainContent a:hover, .mainButton:hover{
+    /* background-color: pink; */
+    padding-left : 22px;
+    padding-right : 22px;
+    padding-top : 11px;
+    padding-bottom : 11px;
+    transition: 200ms;
+}
+.navBarDiv{
+    font-size: 1.3rem;
+}

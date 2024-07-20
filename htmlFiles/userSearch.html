@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="../bootstrapp/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "../cssFiles/style.css">
+    <link rel = "stylesheet" href = "../cssFiles/mainStyle.css">
+    <title>Codeforces User Detail</title>
+</head>
+<body>
+    <div class="navBarDiv">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="../index.html">Cp info</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item px-1">
+                  <a class="nav-link" href= "../index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active px-1">
+                  <a class="nav-link" href = "userSearch.html">Codeforces Profile<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link" href = "contestPage.html" id = "contestPage">Contests</a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link" href = "codechefProfile.html">Codechef Profile</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <div class = "header">
+        <div class = "row d-flex justify-content-center">
+          <div class="col-sm-6 mt-5 mb-5">
+            <h1>Search user by codeforces handle</h1>
+          </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class = "container mb-3">
+            <form>
+                <div class = "d-flex row justify-content-center mb-4">
+                    <input id = "inputValue" class = "form-control col-sm-6" placeholder="codeforces handle">
+                </div>
+                <div class="d-flex row justify-content-center">
+                    <button type = "submit" id = "findUserButton" class = "btn btn-secondary">Submit</button>
+                </div>  
+            </form>
+        </div>
+        <div class = "container hiddenElementContent mb-3">
+            <div class = "row mb-4">
+                <img id = "userImageField" src="https://userpic.codeforces.org/1623458/avatar/b20e9ff01131ac53.jpg" style = "width : 400px"class="rounded mx-auto d-block" alt="user image">
+            </div>
+            <div class = "row">
+                <div class="d-flex col-sm-4 justify-content-center"><b>Name</b></div>
+                <div class="col-sm-8" id = "usernameField">User</div>
+            </div>
+            <div class = "row">
+                <div class="d-flex col-sm-4 justify-content-center"><b>Current rating</b></div>
+                <div class="col-sm-8" id = "currentRatingField">2156</div>
+            </div>
+            <div class = "row">
+                <div class="d-flex col-sm-4 justify-content-center"><b>Max rating</b></div>
+                <div class="col-sm-8" id = "maxRatingField">2390</div>
+            </div>
+            <div class = "row">
+                <div class="d-flex col-sm-4 justify-content-center"><b>Rank</b></div>
+                <div class="col-sm-8" id = "rankField">Master</div>
+            </div>
+            <div class = "row">
+                <div class="d-flex col-sm-4 justify-content-center"><b>Contribution</b></div>
+                <div class="col-sm-8" id = "contributionField"></div>
+            </div>
+            <div class = "row">
+                <div class="d-flex col-sm-4 justify-content-center"><b>Friends</b></div>
+                <div class="col-sm-8" id = "friendsField">2390</div>
+            </div>
+            <div class = "row mb-5">
+                <div class="d-flex col-sm-4 justify-content-center"><b>Organisation</b></div>
+                <div class="col-sm-8" id = "organisationField">2390</div>
+            </div>
+        </div>
+        <div class="container" id = "tableDiv">
+            <table class = "table mt-3" id = "contestHistory">
+            </table>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "../jsFiles/indexJs.js"></script>
+    <script src = "../bootstrapp/js/jquery-3.5.1.js"></script>
+    <script src = "../bootstrapp/js/bootstrap.min.js"></script>
+</body>
+</html>
+

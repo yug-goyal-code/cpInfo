@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "cssFiles/mainStyle.css">
+    
+    <link rel = "stylesheet" href="bootstrapp/css/bootstrap.min.css">
+    <title>Main page cpinfo</title>
+</head>
+<body style = "background-color: #80ffdb;">
+  <div class="navBarDiv">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cp info</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active px-1">
+              <a class="nav-link" href= "index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href = "htmlFiles/userSearch.html">Codeforces Profile<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href = "htmlFiles/contestPage.html" id = "contestPage">Contests</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href = "htmlFiles/codechefProfile.html">Codechef Profile</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+    <div class = "header mb-4">
+      <div class = "row d-flex justify-content-center">
+        <div class="col-sm-6 mt-5 mb-5">
+          <h1>The ultimate website for cp information</h1>
+        </div>
+      </div>
+      <div class = "row d-flex justify-content-center">
+        <a href = "#" class = "btn btn-warning mb-5 mainButton">Explore Features</a>
+      </div>
+    </div>
+    <div class="container mainContent">
+        <div class="row">
+            <div class = "col-sm-6 mt-2 mb-3">
+                <h2 class = "mt-2 mb-5 d-flex justify-content-center">Codeforces Profile</h2>
+                <p>Through this you can obtain the details of codeforces profile of the 
+                    entered user. The information includes entered user name, rating 
+                    and also includes the contest history of the user and many such information. Just enter the user 
+                    codeforces handle and you are good to Go :)
+                </p>
+                <div class = "d-flex justify-content-center"> <a href = "htmlFiles/userSearch.html" class = "btn btn-dark mt-3">Explore</a> </div>
+            </div> 
+            <div class = "col-sm-6 mt-2 mb-3">
+              <img src = "images/codeforcesProfile.jpg" class = "imagesMain">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 mb-5 mainContent">
+        <div class="row">
+            <div class = "col-sm-6 mt-2 mb-3">
+              <img src = "images/contestPage.jpg" class = "imagesMain">
+            </div>
+            <div class = "col-sm-6 mt-2 mb-3">
+                <h2 class = "mt-2 mb-5 d-flex justify-content-center">Contests</h2>
+                <p>Looking for competing with your fellow programmers and want to 
+                  test your skills. Find the contest that is suitable for you and show your 
+                  skill. Just click on the link below to explore various contests.
+                </p>
+                <div class = "d-flex justify-content-center"> <a href = "htmlFiles/contestPage.html" class = "btn btn-dark mt-3">Find contest</a> </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <div class="container mb-5 mainContent">
+      <div class="row">
+          <div class = "col-sm-6 mt-2 mb-3">
+              <h2 class = "mt-2 mb-5 d-flex justify-content-center">Codechef Profiles</h2>
+              <p>To get the insights about a codechef user profile and to know 
+                how they are performing over the years this is a perfect place for you to get
+                started. Get the detail about the user rating their contest and many such 
+                information on one click
+              </p>
+              <div class = "d-flex justify-content-center"> <a href = "htmlFiles/codechefProfile.html" class = "btn btn-dark mt-3">See Profiles</a> </div>
+          </div> 
+          <div class = "col-sm-6 mt-2 mb-3">
+            <img src = "images/codechefProfile.jpg" class = "imagesMain">
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "bootstrapp/js/jquery-3.5.1.js"></script>
+    <script src = "bootstrapp/js/bootstrap.min.js"></script>
+</body>
+</html>
